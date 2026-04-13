@@ -17,10 +17,14 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
-@RequiredArgsConstructor
 public class OrderService {
     private final CartService cartService;
     private final OrderRepository orderRepository;
+
+    public OrderService(CartService cartService, OrderRepository orderRepository) {
+        this.cartService = cartService;
+        this.orderRepository = orderRepository;
+    }
 
     public Optional<OrderResponse> createOrder(Long userId) {
             List<CartItem> cartItems = cartService.getCart(userId);
@@ -100,8 +104,8 @@ public class OrderService {
                         .toList());
     }
 
-    public Order getOrderById(Long orderId) {
-       return orderRepository.getByOrderId(orderId);
+    public OrderResponse getOrderById(Long orderId) {
+       return mapToOrderResponse(orderRepository.getById(orderId));
     }
 
     /* TODO

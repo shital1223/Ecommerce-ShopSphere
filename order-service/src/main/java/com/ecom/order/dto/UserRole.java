@@ -1,5 +1,11 @@
 package com.ecom.order.dto;
 
-public enum UserRole {
-    CUSTOMER, ADMIN
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class UserRole {
+    private Long id;
+    private String name;
 }

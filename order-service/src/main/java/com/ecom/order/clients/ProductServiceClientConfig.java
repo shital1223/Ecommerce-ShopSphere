@@ -13,7 +13,7 @@ import java.util.Optional;
 public class ProductServiceClientConfig {
     @Bean
     public ProductServiceClient productServiceInterface(RestClient.Builder restClientBuilder){
-        RestClient restClient = restClientBuilder.baseUrl("http://product-service")
+        RestClient restClient = restClientBuilder.baseUrl("http://localhost:8083")
                 .defaultStatusHandler(HttpStatusCode::is4xxClientError,
                         ((request,response) -> Optional.empty()))
                 .build();

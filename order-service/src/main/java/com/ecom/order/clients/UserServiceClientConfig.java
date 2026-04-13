@@ -13,7 +13,7 @@ import java.util.Optional;
 public class UserServiceClientConfig {
     @Bean
     public UserServiceClient userServiceInterface(RestClient.Builder restClientBuilder){
-        RestClient restClient = restClientBuilder.baseUrl("http://user-service")
+        RestClient restClient = restClientBuilder.baseUrl("http://localhost:8082")
                 .defaultStatusHandler(HttpStatusCode::is4xxClientError,
                         ((request,response) -> Optional.empty()))
                 .build();

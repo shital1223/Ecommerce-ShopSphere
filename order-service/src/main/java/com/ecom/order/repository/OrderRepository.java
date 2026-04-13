@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface OrderRepository extends JpaRepository<Order,Long> {
-    Order getByOrderId(Long orderId);
+    Order getById(Long orderId);
 }

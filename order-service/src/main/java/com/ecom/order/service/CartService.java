@@ -9,6 +9,7 @@ import com.ecom.order.model.CartItem;
 import com.ecom.order.repository.CartItemRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -66,6 +67,7 @@ public class CartService {
         return cartItemRepository.findByUserId(userId);
     }
 
+    @Transactional
     public void clearCart(Long userId) {
         cartItemRepository.deleteByUserId(userId);
     }

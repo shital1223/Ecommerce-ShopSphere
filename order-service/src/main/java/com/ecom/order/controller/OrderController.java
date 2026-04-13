@@ -1,5 +1,6 @@
 package com.ecom.order.controller;
 
+import com.ecom.order.dto.OrderResponse;
 import com.ecom.order.model.Order;
 import com.ecom.order.service.OrderService;
 import org.springframework.http.HttpStatus;
@@ -24,7 +25,7 @@ public class OrderController {
 
     //Get Order by ID
     @GetMapping("/{orderId}")
-    public ResponseEntity<Order> getOrder(@PathVariable Long orderId) {
+    public ResponseEntity<OrderResponse> getOrder(@PathVariable Long orderId) {
         return ResponseEntity.ok(orderService.getOrderById(orderId));
     }
 
