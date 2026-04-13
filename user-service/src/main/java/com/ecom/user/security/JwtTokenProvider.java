@@ -1,4 +1,4 @@
-package com.ecom.auth_service.security;
+package com.ecom.user.security;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.Claims;

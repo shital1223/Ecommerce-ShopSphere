@@ -1,5 +1,5 @@
-package com.ecom.auth_service.dto;
-import com.ecom.auth_service.model.Role;
+package com.ecom.user.dto;
+import com.ecom.user.model.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

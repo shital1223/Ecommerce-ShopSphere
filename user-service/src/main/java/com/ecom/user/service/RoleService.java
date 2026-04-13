@@ -1,7 +1,7 @@
-package com.ecom.auth_service.service;
+package com.ecom.user.service;
 
-import com.ecom.auth_service.model.Role;
-import com.ecom.auth_service.repository.RoleRepository;
+import com.ecom.user.model.Role;
+import com.ecom.user.repository.RoleRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

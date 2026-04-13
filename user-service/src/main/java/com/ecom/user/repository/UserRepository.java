@@ -1,7 +1,7 @@
-package com.ecom.auth_service.repository;
+package com.ecom.user.repository;
 
 
-import com.ecom.auth_service.model.User;
+import com.ecom.user.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

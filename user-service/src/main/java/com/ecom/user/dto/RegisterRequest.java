@@ -1,6 +1,6 @@
-package com.ecom.auth_service.dto;
+package com.ecom.user.dto;
 
-import com.ecom.auth_service.model.Address;
+import com.ecom.user.model.Address;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,12 +1,12 @@
-package com.ecom.auth_service.controller;
+package com.ecom.user.controller;
 
-import com.ecom.auth_service.dto.AuthResponse;
-import com.ecom.auth_service.dto.LoginRequest;
-import com.ecom.auth_service.dto.RegisterRequest;
-import com.ecom.auth_service.model.Role;
-import com.ecom.auth_service.model.User;
-import com.ecom.auth_service.service.RoleService;
-import com.ecom.auth_service.service.UserService;
+import com.ecom.user.dto.AuthResponse;
+import com.ecom.user.dto.LoginRequest;
+import com.ecom.user.dto.RegisterRequest;
+import com.ecom.user.model.Role;
+import com.ecom.user.model.User;
+import com.ecom.user.service.RoleService;
+import com.ecom.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,9 +16,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.ecom.auth_service.security.JwtTokenProvider;
+import com.ecom.user.security.JwtTokenProvider;
 
 import java.util.Set;
 

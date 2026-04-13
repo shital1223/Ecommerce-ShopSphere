@@ -1,6 +1,6 @@
-package com.ecom.auth_service.config;
+package com.ecom.user.config;
 
-import com.ecom.auth_service.security.JwtAuthenticationFilter;
+import com.ecom.user.security.JwtAuthenticationFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;

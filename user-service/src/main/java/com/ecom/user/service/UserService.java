@@ -1,14 +1,13 @@
-package com.ecom.auth_service.service;
+package com.ecom.user.service;
 
 
-import com.ecom.auth_service.dto.AddressDTO;
-import com.ecom.auth_service.dto.RegisterRequest;
-import com.ecom.auth_service.dto.UserRequest;
-import com.ecom.auth_service.dto.UserResponse;
-import com.ecom.auth_service.model.Address;
-import com.ecom.auth_service.model.User;
-import com.ecom.auth_service.repository.UserRepository;
-import org.antlr.v4.runtime.misc.MultiMap;
+import com.ecom.user.dto.AddressDTO;
+import com.ecom.user.dto.RegisterRequest;
+import com.ecom.user.dto.UserRequest;
+import com.ecom.user.dto.UserResponse;
+import com.ecom.user.model.Address;
+import com.ecom.user.model.User;
+import com.ecom.user.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 

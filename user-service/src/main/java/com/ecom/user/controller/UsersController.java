@@ -1,8 +1,8 @@
-package com.ecom.auth_service.controller;
+package com.ecom.user.controller;
 
-import com.ecom.auth_service.dto.UserRequest;
-import com.ecom.auth_service.dto.UserResponse;
-import com.ecom.auth_service.service.UserService;
+import com.ecom.user.dto.UserRequest;
+import com.ecom.user.dto.UserResponse;
+import com.ecom.user.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

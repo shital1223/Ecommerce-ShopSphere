@@ -1,4 +1,4 @@
-package com.ecom.auth_service.model;
+package com.ecom.user.model;
 
 import jakarta.persistence.*;
 
