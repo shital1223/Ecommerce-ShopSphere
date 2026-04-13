@@ -1,14 +1,16 @@
 spring:
   application:
     name: product-service
-  datasource:
-    url: jdbc:postgresql://localhost:5432/product_db
-    username: admin
-    password: admin
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+  profiles:
+    active: dev
+  config:
+    import: configserver:http://localhost:8888
 
 server:
   port: 8083
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,refresh
