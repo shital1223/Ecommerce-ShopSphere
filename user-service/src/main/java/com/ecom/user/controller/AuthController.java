@@ -16,12 +16,15 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.ecom.user.security.JwtTokenProvider;
 
 import java.util.Set;
 
+
 @RestController
+@RequestMapping("/api/auth")
 public class AuthController {
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -42,7 +45,7 @@ public class AuthController {
     @PostMapping("/login")
     ResponseEntity<?> login(@RequestBody LoginRequest loginReq){
         Authentication auth;
-        System.out.println("Loginreq"+loginReq);
+
         try {
             auth = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginReq.getUsername(), loginReq.getPassword()));
         } catch (BadCredentialsException e) {
